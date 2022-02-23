@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LimaShop.Customer", "LimaShop.Customer\LimaShop.Customer.csproj", "{B97FFE32-E5A4-4722-B6C8-30C54A050BAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B97FFE32-E5A4-4722-B6C8-30C54A050BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B97FFE32-E5A4-4722-B6C8-30C54A050BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B97FFE32-E5A4-4722-B6C8-30C54A050BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B97FFE32-E5A4-4722-B6C8-30C54A050BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F01EB212-7E78-48B0-B49F-9B22DD75BA11}
+	EndGlobalSection
+EndGlobal
