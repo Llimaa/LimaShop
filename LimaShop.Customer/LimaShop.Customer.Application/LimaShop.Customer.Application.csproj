@@ -1,18 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="10.0.1" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <Folder Include="Validators\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LimaShop.Customer.Application\LimaShop.Customer.Application.csproj" />
-    <ProjectReference Include="..\LimaShop.Customer.Infra\LimaShop.Customer.Infra.csproj" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LimaShop.Customer.Core\LimaShop.Customer.Core.csproj" />
   </ItemGroup>
 
 </Project>
