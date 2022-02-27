@@ -1,4 +1,7 @@
+using FluentValidation.AspNetCore;
 using LimaShop.Customer.Application;
+using LimaShop.Customer.Application.Validators;
+using LimaShop.Customer.Filters;
 using LimaShop.Customer.Infra;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,7 +30,9 @@ namespace LimaShop.Customer
                 .AddRepositories()
                 .AddHandlers();
 
-            services.AddControllers();
+            services.AddControllers(options => options.Filters.Add(typeof(ValidationFilter)))
+                .AddFluentValidation(FluentValidation => FluentValidation.RegisterValidatorsFromAssemblyContaining<CreateCustomerValidator>());
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LimaShop.Customer", Version = "v1" });
