@@ -5,11 +5,13 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LimaShop.Customer", "LimaShop.Customer\LimaShop.Customer.csproj", "{B97FFE32-E5A4-4722-B6C8-30C54A050BAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LimaShop.Customer.Application", "LimaShop.Customer.Application\LimaShop.Customer.Application.csproj", "{F22C124D-9EDC-47EC-B1B3-266BDF3F27A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LimaShop.Customer.Application", "LimaShop.Customer.Application\LimaShop.Customer.Application.csproj", "{F22C124D-9EDC-47EC-B1B3-266BDF3F27A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LimaShop.Customer.Core", "LimaShop.Customer.Core\LimaShop.Customer.Core.csproj", "{85A553C0-8AA6-429D-807D-13D1D09959E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LimaShop.Customer.Core", "LimaShop.Customer.Core\LimaShop.Customer.Core.csproj", "{85A553C0-8AA6-429D-807D-13D1D09959E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LimaShop.Customer.Infra", "LimaShop.Customer.Infra\LimaShop.Customer.Infra.csproj", "{01D23180-E011-4CA6-9B4E-110C3D5E5C55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LimaShop.Customer.Infra", "LimaShop.Customer.Infra\LimaShop.Customer.Infra.csproj", "{01D23180-E011-4CA6-9B4E-110C3D5E5C55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LimaShop.Customer.Tests", "LimaShop.Customer.Tests\LimaShop.Customer.Tests.csproj", "{FEA56EE6-3AA4-4E01-A825-9C4AEC0BD0C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{01D23180-E011-4CA6-9B4E-110C3D5E5C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01D23180-E011-4CA6-9B4E-110C3D5E5C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01D23180-E011-4CA6-9B4E-110C3D5E5C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA56EE6-3AA4-4E01-A825-9C4AEC0BD0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA56EE6-3AA4-4E01-A825-9C4AEC0BD0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA56EE6-3AA4-4E01-A825-9C4AEC0BD0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA56EE6-3AA4-4E01-A825-9C4AEC0BD0C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

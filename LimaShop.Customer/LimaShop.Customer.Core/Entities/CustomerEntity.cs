@@ -33,23 +33,27 @@ namespace LimaShop.Customer.Core.Entities
             BirthDate = birtDate;
             PhoneNumber = phoneNumber;
             Email = email;
+            UpdateOnDate();
         }
 
         public void UpdateAddress(Address address)
         {
             Address = address;
+            UpdateOnDate();
         }
 
         public void ActiveCustomer()
         {
             if (!Active)
                 Active = !Active;
+            UpdateOnDate();
         }
 
         public void DesactiveCustomer()
         {
             if (Active)
                 Active = !Active;
+            UpdateOnDate();
         }
     }
 }
