@@ -17,7 +17,10 @@ namespace LimaShop.Customer.Application.Commands.Handlers
 
         public async Task<Unit> Handle(DesactiveCustomer request, CancellationToken cancellationToken)
         {
-            await _customerRepository.DesactiveCustomer(request.CustomerId);
+            var customer = await _customerRepository.GetByIdAsync(request.CustomerId);
+            customer.DesactiveCustomer();
+
+            await _customerRepository.DesactiveCustomer(customer);
             return Unit.Value;
         }
     }

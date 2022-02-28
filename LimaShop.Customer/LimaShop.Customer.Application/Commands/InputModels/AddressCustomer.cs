@@ -4,6 +4,17 @@ namespace LimaShop.Customer.Application.Commands.InputModels
 {
     public class AddressCustomer
     {
+        public AddressCustomer(string country, string state, string city, string longradouro, string street, string number, string zipCore)
+        {
+            Country = country;
+            State = state;
+            City = city;
+            Longradouro = longradouro;
+            Street = street;
+            Number = number;
+            ZipCore = zipCore;
+        }
+
         public string Country { get; set; }
         public string State { get; set; }
         public string City { get; set; }

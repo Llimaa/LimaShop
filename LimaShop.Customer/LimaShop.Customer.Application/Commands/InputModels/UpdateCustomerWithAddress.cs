@@ -5,6 +5,22 @@ namespace LimaShop.Customer.Application.Commands.InputModels
 {
     public class UpdateCustomerWithAddress: IRequest<Unit>
     {
+        public UpdateCustomerWithAddress(Guid customerId, string fullName, DateTime birthDate, string phoneNumber, string email, string country, string state, string city, string longradouro, string street, string number, string zipCore)
+        {
+            CustomerId = customerId;
+            FullName = fullName;
+            BirthDate = birthDate;
+            PhoneNumber = phoneNumber;
+            Email = email;
+            Country = country;
+            State = state;
+            City = city;
+            Longradouro = longradouro;
+            Street = street;
+            Number = number;
+            ZipCore = zipCore;
+        }
+
         public Guid CustomerId { get; set; }
         public string FullName { get; set; }
         public DateTime BirthDate { get; set; }

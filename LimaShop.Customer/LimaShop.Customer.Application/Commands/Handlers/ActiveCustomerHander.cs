@@ -17,7 +17,9 @@ namespace LimaShop.Customer.Application.Commands.Handlers
 
         public async Task<Unit> Handle(ActiveCustomer request, CancellationToken cancellationToken)
         {
-            await _customerRepository.ActiveCustomer(request.CustomerId);
+            var customer = await _customerRepository.GetByIdAsync(request.CustomerId);
+            customer.ActiveCustomer();
+            await _customerRepository.ActiveCustomer(customer);
             return Unit.Value;
         }
     }

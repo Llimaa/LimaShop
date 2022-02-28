@@ -32,18 +32,16 @@ namespace LimaShop.Customer.Infra.Persistence.Repositories
             customer.UpdateAddress(address);
             await _collection.ReplaceOneAsync(x => x.Id == userId, customer);
         }
-        public async Task ActiveCustomer(Guid userId)
+        public async Task ActiveCustomer(CustomerEntity customer)
         {
-            var customer = await GetCustomerById(userId);
             customer.ActiveCustomer();
-            await _collection.ReplaceOneAsync(x => x.Id == userId, customer);
+            await _collection.ReplaceOneAsync(x => x.Id == customer.Id, customer);
         }
 
-        public async Task DesactiveCustomer(Guid userId)
+        public async Task DesactiveCustomer(CustomerEntity customer)
         {
-            var customer = await GetCustomerById(userId);
             customer.DesactiveCustomer();
-            await _collection.ReplaceOneAsync(x => x.Id == userId, customer);
+            await _collection.ReplaceOneAsync(x => x.Id == customer.Id, customer);
         }
 
         public async Task<bool> DeleteById(Guid id)

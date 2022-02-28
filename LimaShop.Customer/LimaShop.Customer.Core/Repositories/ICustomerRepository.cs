@@ -14,8 +14,8 @@ namespace LimaShop.Customer.Core.Repositories
         Task Insert(CustomerEntity entity);
         Task Update(CustomerEntity entity);
         Task<bool> DeleteById(Guid id);
-        Task ActiveCustomer(Guid customerId);
-        Task DesactiveCustomer(Guid customerId);
+        Task ActiveCustomer(CustomerEntity customer);
+        Task DesactiveCustomer(CustomerEntity customer);
         Task UpdateAddressCustomer(Address address, Guid customerId);
     }
 }
